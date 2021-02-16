@@ -6,7 +6,7 @@ with orders as (
         order_date,
         status
 
-    from analytics.jaffle_shop.orders
+    from {{ source('jaffle_shop','orders') }}
 
 )
 
